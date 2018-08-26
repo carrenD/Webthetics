@@ -24,15 +24,15 @@ def getGT(gt_file):
 
 def random_small_occlusion_image(size=50):
 	# in paper, the size was set as 10, 20, 30, 40, 50
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_' + str(size) + 'x' + str(size) + 'x100\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_' + str(size) + 'x' + str(size) + 'x100\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
 
-	with open('..\\results\\test_list.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -50,14 +50,14 @@ def random_small_occlusion_image(size=50):
 
 def large_occlusion_image(size=500):
 	# in paper, the size was set as 100, 200, 300, 400, 500
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_' + str(size) + 'x' + str(size) + '\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_' + str(size) + 'x' + str(size) + '\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
-	with open('..\\results\\test_list.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -75,14 +75,14 @@ def large_occlusion_image(size=500):
 def occlusion_ratio_vertival(ratio=50):
 	# in paper, the rato was set as 10, 20, 30, 40, 50
 	# this function can be adapted to occlude left, right and middle part of the webpage
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_middle_ver_' + str(ratio)+ '%\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_middle_ver_' + str(ratio)+ '%\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
-	with open('..\\results\\test_list.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -102,14 +102,14 @@ def occlusion_ratio_vertival(ratio=50):
 def occlusion_ratio_horizontal(ratio=50):
 	# in paper, the rato was set as 10, 20, 30, 40, 50
 	# this function can be adapted to occlude top, down and middle part of the webpage
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_middle_hor_' + str(ratio) + '%\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_middle_hor_' + str(ratio) + '%\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
-	with open('D:\\siemens\\webpage\\result\\exp4_attri\\test_list_backup.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -126,14 +126,14 @@ def occlusion_ratio_horizontal(ratio=50):
 
 def low_frequency_pass():
 	# filter out the low frequency contents
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_low_frequency_pass\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_low_frequency_pass\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
-	with open('..\\results\\test_list.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -154,14 +154,14 @@ def low_frequency_pass():
 
 def high_frequency_pass():
 	# enhance the high frequency content within the webpage
-	data_path = '..\\data\\'
-	occlusion_path = '..\\data\\data_occlusion_high_frequency_pass\\'
+	data_path = '.\\data\\'
+	occlusion_path = '.\\data\\data_occlusion_high_frequency_pass\\'
 	if not os.path.exists(occlusion_path):
 		os.makedirs(occlusion_path)
 		os.makedirs(occlusion_path + 'english')
 		os.makedirs(occlusion_path + 'foreign')
 		os.makedirs(occlusion_path + 'grayscale')
-	with open('..\\results\\test_list.txt', 'r') as f:
+	with open('.\\data\\test_list_eva.txt', 'r') as f:
 		for line in f:
 			image, rate = line.strip().split()
 			img_path = os.path.join(data_path, image.split('\\')[0], image.split('\\')[1])
@@ -177,12 +177,12 @@ def high_frequency_pass():
 def infe():
 	# need to change the path in the .prototxt file, to specify which test dataset to use
 	# the pre-trained webthetics model was saved under model_zoo folder
-	net = caffe.Net('..\\model_zoo\\webthetics.prototxt','..\\model_zoo\\webthetics.caffemodel', caffe.TEST)
+	net = caffe.Net('webthetics.prototxt','..\\model\\webthetics.caffemodel', caffe.TEST)
 	net.forward()
 	rating = net.blobs['fc8'].data
 	loss = net.blobs['loss'].data
 
-	gt_file = '..\\results\\test_list.txt'
+	gt_file = '.\\data\\test_list_eva.txt'
 	gt, images = getGT(gt_file)
 	pred = list(itertools.chain.from_iterable(rating))
 	eva = pearsonr(gt, pred)
