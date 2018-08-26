@@ -30,3 +30,5 @@ test these images to observe how these damage of design influence the automated 
 
 ### Results
 Webpage aesthetics rating predictions with our deep learing model (r=0.85, p<.001)
+![alt text](https://github.com/carrenD/Webthetics/blob/master/results/cnn_prediction.png)
+
