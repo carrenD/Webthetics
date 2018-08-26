@@ -7,7 +7,7 @@ conducted when Qi and Samuel were doing internship at Siemens Corporate Research
 As web has become the most popular media to attract users and customers worldwide, webpage aesthetics plays an increasingly important role for engaging users online and impacting their user experience. We present a novel method using deep learning to automatically compute and quantify webpage aesthetics. Our deep neural network, named as Webthetics, which is trained from the collected user rating data, can extract representative features from raw webpages and quantify their aesthetics. To improve the model performance, we propose to transfer the knowledge from image style recognition task into our network. We have validated that our method significantly outperforms previous method using hand-crafted features such as colorfulness and complexity. Moreover, empirical experiments show that our network is sensitive to important design factors including layout, balance, content information and spatial frequency. These promising results indicate that our method can serve as an effective and efficient means for providing objective aesthetics evaluation during the design process.
 
 ### Requirements
-We make this implementation as light-weighted and Windows environment friendly, so that it can be easily executable at a designer PC with minumum GPU and system requirements.
+We make this implementation as light-weighted and Windows environment friendly, so that it can be easily executable at a designer PC with minumum gpu and system requirements.
 
 ### Usage
 
