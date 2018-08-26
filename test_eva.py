@@ -23,7 +23,7 @@ def infe():
 	rating = net.blobs['fc8'].data
 	loss = net.blobs['loss'].data
 
-	gt_file = 'test_list_eva.txt'
+	gt_file = '.\\data\\test_list_eva.txt'
 	gt, images = getGT(gt_file)
 	pred = list(itertools.chain.from_iterable(rating))
 	eva = evaPearsonr(gt, pred)
