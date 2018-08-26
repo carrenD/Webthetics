@@ -28,4 +28,5 @@ for testing the webthetics model, to predict the aesthetics rating score for a w
 for generating the manipulated webpages for empirical study towards design factors </br>
 test these images to observe how these damage of design influence the automated aesthetics quanfitication.
 
-
+### Results
+Webpage aesthetics rating predictions with our deep learing model (r=0.85, p<.001)
