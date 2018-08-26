@@ -11,6 +11,6 @@ We make this implementation as light-weighted and Windows environment friendly, 
 
 ### Usage
 
-- prepare the data of webpage screenshots
-Download the dataset released by 
-
+- prepare the data of webpage screenshots and user aesthetics ratings </br>
+Download the resources released by Reinecke et al, which we also put in the data folder. </br>
+use the exp_prepare.py as preprocessing to collect the webpage--userRating pairs </br>
