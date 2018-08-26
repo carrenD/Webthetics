@@ -57,7 +57,7 @@ def generateListAll():
 			csv_key = image.split('\\')[-2] + '_' + image.split('\\')[-1].split('.')[0]
 			if csv_key in rating_list:
 				for rating in rating_list[csv_key]:
-					dummy = rating / 0.5 # to deal with *.5 rating cases, since caffe requires integer labels
+					dummy = rating / 0.5
 					if dummy%2 == 0:
 						f.write(image.split('\\')[-2] + '\\' + image.split('\\')[-1])
 						f.write(' ' + str(int(rating)))
@@ -95,7 +95,6 @@ def generateListAll():
 
 if __name__ == "__main__":
 	try:
-		# To random generate training, validation and test dataset
 		generateListAll()
 	except KeyboardInterrupt:
 		sys.exit(0)
