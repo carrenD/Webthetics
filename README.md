@@ -29,9 +29,8 @@ for generating the manipulated webpages for empirical study towards design facto
 test these images to observe how these damage of design influence the automated aesthetics quanfitication.
 
 ### Results
-- Embedding webpages at different aesthetics scales predicted by deep learning model.
 
-<img align="left" src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%">
+<img align="left" src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%" title=" Embedding webpages at different aesthetics scales predicted by deep learning model">
 
 <p align="center>
 <img src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%">
