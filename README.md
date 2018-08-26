@@ -21,6 +21,8 @@ The convolutional neural network model as listed in Table 1 in the paper.
 - test_eva.py </br>
 for testing the webthetics model, to predict the aesthetics rating score for a webpage screenshot.
 
-
+- occlusion.py </br>
+generate the manipulated webpages for empirical study towards design factors.
+test these images to observe how these damage of design influence the automated aesthetics quanfitication.
 
 
