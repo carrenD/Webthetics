@@ -12,5 +12,6 @@ We make this implementation as light-weighted and Windows environment friendly, 
 ### Usage
 
 - exp_prepare.py (prepare the data of webpage screenshots and user aesthetics ratings) </br>
-download the resources released by Reinecke et al, which we also put in the data folder. </br>
-this is the preprocessing to collect the webpage--userRating pairs </br>
+this is the preprocessing to collect the webpage--userrating pairs </br>
+need to download the resources released by Reinecke et al, which we also put in the data folder. </br>
+
