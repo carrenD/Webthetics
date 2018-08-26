@@ -12,6 +12,15 @@ We make this implementation as light-weighted and Windows environment friendly, 
 ### Usage
 
 - exp_prepare.py (prepare the data of webpage screenshots and user aesthetics ratings) </br>
-this is the preprocessing to collect the webpage--userrating pairs </br>
-need to download the resources released by Reinecke et al, which we also put in the data folder. </br>
+this is the preprocessing step to collect the webpage--userrating pairs, need to first download the resources released by Reinecke et al. </br>
+We also put our downloaded reosurces in the data folder, for ease of your direct reference. </br>
+
+- webthetics.prototxt </br>
+The convolutional neural network model as listed in Table 1 in the paper.
+
+- test_eva.py </br>
+for testing the webthetics model, to predict the aesthetics rating score for a webpage screenshot.
+
+
+
 
