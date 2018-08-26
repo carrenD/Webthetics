@@ -14,7 +14,7 @@ Install the Windows Caffe following the steps [here](https://github.com/BVLC/caf
 ### Usage
 
 - exp_prepare.py </br>
-prepare the data of webpage screenshots and user aesthetics ratings, and collect the webpage--userrating pairs </br> 
+prepare the data of webpage screenshots and user aesthetics ratings, and collect the webpage--userRating pairs </br> 
 need to first download the resources released by [Reinecke et al. CHI'14](https://dl.acm.org/citation.cfm?id=2557052) we also put our downloaded reosurces in the data folder </br>
 
 - webthetics.prototxt </br>
