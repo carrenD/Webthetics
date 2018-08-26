@@ -38,4 +38,4 @@ test these images to observe how these damage of design influence the automated 
 - Webpage aesthetics rating predictions with linearly regressing hand-crafted colorfulness and complexity (r=0.59, p<.001)
 <img src="https://github.com/carrenD/Webthetics/blob/master/results/color_complexity.png" width="50%" height="50%">
 
-#### Contact at dqcarren@gmail.com and sam.zheng@gmail.com
+#### Any questions, please feel free to contact at dqcarren@gmail.com and sam.zheng@gmail.com
