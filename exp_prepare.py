@@ -30,15 +30,15 @@ def collectUserRating(csv_file):
 	
 def generateListAll():
 	# get webpage rating list, per image name as dict key, all user rating as values
-	rate_file = '..\\data\\ae_only_unambiguous_1000.csv'
+	rate_file = '.\\data\\ae_only_unambiguous_1000.csv'
 	rating_list = collectUserRating(rate_file)
 	
-	result_folder = '..\\results\\'
+	result_folder = '.\\results\\'
 	if not os.path.exists(result_folder):
 		os.mkdir(result_folder)
 
 	# get webpage image list
-	img_folder = '..\\data\\'
+	img_folder = '.\\data\\'
 	extensions = ['png']
 	image_list = walkDirWithExensions(img_folder, extensions)
 	rated_image_list = []
@@ -48,9 +48,9 @@ def generateListAll():
 			rated_image_list.append(image)
 
 	shuffle(rated_image_list) # to random shuffle the whole dataset
-	train_list = rated_image_list[0:300]
-	valid_list = rated_image_list[300:338]
-	test_list = rated_image_list[338:398]
+	train_list = rated_image_list[0:360]
+	valid_list = rated_image_list[360:300]
+	test_list = rated_image_list[300:398]
 
 	with open(os.path.join(result_folder, 'train_list.txt'), 'w') as f:
 		for image in train_list:
