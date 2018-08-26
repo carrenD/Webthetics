@@ -17,7 +17,7 @@ need to first download the resources released by Reinecke et al. we also put our
 
 - webthetics.prototxt </br>
 the convolutional neural network model as listed in Table 1 in the paper </br>
-The model folder has the trained network
+the model folder has the trained network
 
 - test_eva.py </br>
 for testing the webthetics model, to predict the aesthetics rating score for a webpage screenshot.
