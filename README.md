@@ -30,6 +30,8 @@ test these images to observe how these damage of design influence the automated 
 
 ### Results
 Embedding webpages at different aesthetics scales predicted by deep learning model.
+<img src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%">
+
 ![alt text](https://github.com/carrenD/Webthetics/blob/master/results/embedding.png){:height="50% width="50%"}
 
 Webpage aesthetics rating predictions with our deep learing model (r=0.85, p<.001)
