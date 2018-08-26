@@ -15,7 +15,7 @@ Install the Windows Caffe following the steps [here](https://github.com/BVLC/caf
 
 - exp_prepare.py </br>
 prepare the data of webpage screenshots and user aesthetics ratings, and collect the webpage--userrating pairs </br> 
-need to first download the resources released by Reinecke et al. we also put our downloaded reosurces in the data folder </br>
+need to first download the resources released by [Reinecke et al. CHI'14](https://dl.acm.org/citation.cfm?id=2557052) we also put our downloaded reosurces in the data folder </br>
 
 - webthetics.prototxt </br>
 the convolutional neural network model as listed in Table 1 in the paper </br>
