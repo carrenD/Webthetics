@@ -18,7 +18,7 @@ def getGT(gt_file):
 	return gt, images
 
 def infe():
-	net = caffe.Net('webthetics.prototxt','..\\experiments\\models\\soft_transfer\\flickr_iter_3700.caffemodel', caffe.TEST)
+	net = caffe.Net('webthetics.prototxt','.\\models\\webthetics.caffemodel', caffe.TEST)
 	net.forward()
 	rating = net.blobs['fc8'].data
 	loss = net.blobs['loss'].data
