@@ -16,7 +16,7 @@ prepare the data of webpage screenshots and user aesthetics ratings, and collect
 need to first download the resources released by Reinecke et al. we also put our downloaded reosurces in the data folder </br>
 
 - webthetics.prototxt </br>
-the convolutional neural network model as listed in Table 1 in the paper
+the convolutional neural network model as listed in Table 1 in the paper </br>
 The model folder has the trained network
 
 - test_eva.py </br>
