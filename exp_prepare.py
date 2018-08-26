@@ -33,10 +33,6 @@ def generateListAll():
 	rate_file = '.\\data\\ae_only_unambiguous_1000.csv'
 	rating_list = collectUserRating(rate_file)
 	
-	result_folder = '.\\results\\'
-	if not os.path.exists(result_folder):
-		os.mkdir(result_folder)
-
 	# get webpage image list
 	img_folder = '.\\data\\'
 	extensions = ['png']
@@ -52,7 +48,7 @@ def generateListAll():
 	valid_list = rated_image_list[360:300]
 	test_list = rated_image_list[300:398]
 
-	with open(os.path.join(result_folder, 'train_list.txt'), 'w') as f:
+	with open(os.path.join(img_folder, 'train_list.txt'), 'w') as f:
 		for image in train_list:
 			csv_key = image.split('\\')[-2] + '_' + image.split('\\')[-1].split('.')[0]
 			if csv_key in rating_list:
@@ -69,7 +65,7 @@ def generateListAll():
 						f.write(' ' + str(int(rating)+1*ratio))
 						f.write('\n')
 					
-	with open(os.path.join(result_folder, 'valid_list.txt'), 'w') as f:
+	with open(os.path.join(img_folder, 'valid_list.txt'), 'w') as f:
 		for image in valid_list:
 			csv_key = image.split('\\')[-2] + '_' + image.split('\\')[-1].split('.')[0]
 			if csv_key in rating_list:
@@ -77,7 +73,7 @@ def generateListAll():
 				f.write(' ' + str(int(np.round(np.mean(rating_list[csv_key])))))
 				f.write('\n')
 	
-	with open(os.path.join(result_folder, 'test_list_eva.txt'), 'w') as f:
+	with open(os.path.join(img_folder, 'test_list_eva.txt'), 'w') as f:
 		for image in test_list:
 			csv_key = image.split('\\')[-2] + '_' + image.split('\\')[-1].split('.')[0]
 			if csv_key in rating_list:
@@ -85,7 +81,7 @@ def generateListAll():
 				f.write(' ' + str(np.round(np.mean(rating_list[csv_key]),2)))
 				f.write('\n')
 				
-	with open(os.path.join(result_folder, 'test_list.txt'), 'w') as f:
+	with open(os.path.join(img_folder, 'test_list.txt'), 'w') as f:
 		for image in test_list:
 			csv_key = image.split('\\')[-2] + '_' + image.split('\\')[-1].split('.')[0]
 			if csv_key in rating_list:
