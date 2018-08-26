@@ -31,7 +31,7 @@ layer {
     scale: 0.00390625
   }
   image_data_param {
-    source: "test_list.txt"
+    source: "valid_list.txt"
     batch_size: 98
     # change the path here to test different occluded images
     root_folder: ".\\data\\"
