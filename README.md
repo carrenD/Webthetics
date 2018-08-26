@@ -8,7 +8,7 @@ As web has become the most popular media to attract users and customers worldwid
 
 ### Requirements
 We make this implementation as light-weighted and Windows environment friendly, so that it can be easily executable at a designer PC with minumum gpu and system requirements. </br>
-Install the [Windows Caffe](https://github.com/BVLC/caffe/tree/windows) following the steps there.
+Install the Windows Caffe following the steps [here](https://github.com/BVLC/caffe/tree/windows).
 
 ### Usage
 
