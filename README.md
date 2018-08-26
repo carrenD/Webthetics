@@ -29,19 +29,12 @@ for generating the manipulated webpages for empirical study towards design facto
 test these images to observe how these damage of design influence the automated aesthetics quanfitication.
 
 ### Results
-
-<img align="left" src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%" title=" Embedding webpages at different aesthetics scales predicted by deep learning model">
-
-<p align="center>
-<img src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="50%" height="50%">
-</p>
+- Embedding webpages at different aesthetics scales predicted by deep learning model
+<img src="https://github.com/carrenD/Webthetics/blob/master/results/embedding.png" width="70%" height="70%">
                                                                                                                           
 - Webpage aesthetics rating predictions with our deep learing model (r=0.85, p<.001)
-<p align="center>
-<img src="https://github.com/carrenD/Webthetics/blob/master/results/cnn_prediction.png" width="50%" height="50%">
-</p>
-                                                                                                                               
+<img src="https://github.com/carrenD/Webthetics/blob/master/results/cnn_prediction.png" width="70%" height="70%">
+                                                                                                                    
 - Webpage aesthetics rating predictions with linearly regressing hand-crafted colorfulness and complexity (r=0.59, p<.001)
-<p align="center>
-<img src="https://github.com/carrenD/Webthetics/blob/master/results/color_complexity.png" width="50%" height="50%">
-</p>
+<img src="https://github.com/carrenD/Webthetics/blob/master/results/color_complexity.png" width="70%" height="70%">
+
