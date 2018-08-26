@@ -1,4 +1,4 @@
-name: "exp4-soft-transfer-MLP-webpageNet"
+name: "soft-transfer-MLP-webpageNet"
 layer {
   name: "data"
   type: "ImageData"
@@ -12,11 +12,11 @@ layer {
   }
   image_data_param {
     source: "train_list.txt"
-	  root_folder: "..\\..\\data\\"
-	  shuffle: 1
+    root_folder: ".\\data\\"
+    shuffle: 1
     batch_size: 64
     new_height: 192
-	  new_width: 256
+    new_width: 256
   }
 }
 layer {
@@ -34,7 +34,7 @@ layer {
     source: "test_list.txt"
     batch_size: 98
     # change the path here to test different occluded images
-	  root_folder: "..\\experiments\\original_data\\"
+    root_folder: ".\\data\\"
     new_height: 192
     new_width: 256
   }
@@ -334,7 +334,6 @@ layer {
   type: "InnerProduct"
   bottom: "fc6"
   top: "fc7"
-  # Note that lr_mult can be set to 0 to disable any fine-tuning of this, and any other, layer
   param {
     lr_mult: 1
     decay_mult: 1
@@ -375,7 +374,6 @@ layer {
   type: "InnerProduct"
   bottom: "fc7"
   top: "fc8"
-  # lr_mult is set to higher than for other layers, because this layer is starting from random while the others are already trained
   param {
     lr_mult: 1
     decay_mult: 1
