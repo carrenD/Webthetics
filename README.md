@@ -1,5 +1,5 @@
 ## Webthetics: Quantifying Webpage Aesthetics with Deep Learning
-by Qi Dou, Sam Zheng*, Samuel Sun, and Pheng-Ann Heng </br>
+by Qi Dou, Sam Zheng, Samuel Sun, and Pheng-Ann Heng </br>
 conducted when Qi and Samuel were doing internship at Siemens Corporate Research, Princeton, US.
 
 ### Introduction
